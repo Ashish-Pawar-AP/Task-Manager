@@ -1,0 +1,23 @@
+{
+  "name": "concurrent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "backend": "npm run dev --prefix backend",
+    "frontend": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "keywords": [
+    "backend",
+    "frontend"
+  ],
+  "author": "Ashish",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrent": "^0.3.2",
+    "concurrently": "^9.2.1"
+  }
+}
